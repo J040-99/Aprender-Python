@@ -167,3 +167,7 @@ footer {
   background-color: #333;
   color: white;
 }
+
+.espacoesquerda {
+  margin-left: 2px;
+}
