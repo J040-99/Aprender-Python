@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lições de Python</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="CSS/syntax-highlight.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">Lições Básicas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="licoes.html">Lições</a></li>
+                <li><a href="recursos.html">Recursos</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- BLOCO DE LIÇÃO 1 (Copiar este bloco para adicionar nova lição) -->
+        <article class="licao" id="licao-1">
+            <h2>Lição 1: O teu primeiro "Olá Mundo"</h2>
+            <p>Em Python, imprimir texto no ecrã é extremamente simples. Utilizamos a função <span
+                    class="negrito">print()</span>.</p>
+            <pre><code><span class="py-comment"># Este é um comentário em Python</span>
+<span class="py-builtin">print</span>(<span class="py-string">"Olá, Mundo!"</span>)
+            </code></pre>
+            <p>Nota que <span class="italico">não é necessário ponto e vírgula</span> no final da instrução.</p>
+            <hr>
+        </article>
+
+        <!-- BLOCO DE LIÇÃO 2 -->
+        <article class="licao" id="licao-2">
+            <h2>Lição 2: Variáveis e Tipos de Dados</h2>
+            <p>As variáveis servem para <span class="sublinhado">armazenar informações</span>. Em Python, não precisas
+                de declarar o tipo.</p>
+            <ul>
+                <li><strong>Strings:</strong> texto entre aspas (<code>"olá"</code>)</li>
+                <li><strong>Inteiros:</strong> números sem casas decimais (<code>10</code>)</li>
+                <li><strong>Floats:</strong> números com casas decimais (<code>3.14</code>)</li>
+                <li><strong>Booleanos:</strong> <code>True</code> ou <code>False</code></li>
+            </ul>
+            <p class="texto-pequeno">Dica: Usa <code>type()</code> para saber o tipo de uma variável.</p>
+            <hr>
+        </article>
+
+        <!-- BLOCO DE LIÇÃO 3 -->
+        <article class="licao" id="licao-3">
+            <h2>Lição 3: Estruturas Condicionais (if/else)</h2>
+            <p>Permitem tomar decisões no código. Python utiliza a <span class="negrito">indentação</span> para definir
+                blocos.</p>
+            <pre><code>idade <span class="py-operator">=</span> <span class="py-number">67</span>
+
+<span class="py-keyword">if</span> idade <span class="py-operator">>=</span> <span class="py-number">67</span>:
+    <span class="py-builtin">print</span>(<span class="py-string">"És maior de idade."</span>)
+<span class="py-keyword">else</span>:
+    <span class="py-builtin">print</span>(<span class="py-string">"Ainda és menor."</span>)
+            </code></pre>
+            <br>
+            <p class="italico alinhado-centro">A indentação (espaços no início) é obrigatória em Python!</p>
+        </article>
+
+        <!-- BLOCO DE LIÇÃO 4 -->
+        <article class="licao" id="licao-4">
+            <h2>Lição 4: Ciclos (for e while)</h2>
+            <p>Os ciclos permitem repetir ações. O <span class="negrito">for</span> itera sobre uma sequência.</p>
+            <pre><code><span class="py-comment"># Ciclo for</span>
+<span class="py-keyword">for</span> i <span class="py-keyword">in</span> <span class="py-builtin">range</span>(<span class="py-number">5</span>):
+    <span class="py-builtin">print</span>(i)
+
+<span class="py-comment"># Ciclo while</span>
+contador <span class="py-operator">=</span> <span class="py-number">0</span>
+<span class="py-keyword">while</span> contador <span class="py-operator"><</span> <span class="py-number">3</span>:
+    <span class="py-builtin">print</span>(contador)
+    contador <span class="py-operator">+=</span> <span class="py-number">1</span>
+            </code></pre>
+        </article>
+
+        <!-- BLOCO DE LIÇÃO 5 -->
+        <article class="licao" id="licao-5">
+            <h2>Lição 5: Listas</h2>
+            <p>As listas permitem <span class="sublinhado">armazenar múltiplos valores</span> numa variável.</p>
+            <pre><code>frutas <span class="py-operator">=</span> [<span class="py-string">"maçã"</span>, <span class="py-string">"banana"</span>, <span class="py-string">"laranja"</span>]
+
+<span class="py-comment"># Acessar elementos</span>
+<span class="py-builtin">print</span>(frutas[<span class="py-number">0</span>])  <span class="py-comment"># maçã</span>
+
+<span class="py-comment"># Adicionar elemento</span>
+frutas.<span class="py-builtin">append</span>(<span class="py-string">"manga"</span>)
+
+<span class="py-comment"># Percorrer lista</span>
+<span class="py-keyword">for</span> fruta <span class="py-keyword">in</span> frutas:
+    <span class="py-builtin">print</span>(fruta)
+            </code></pre>
+        </article>
+
+        <!-- BLOCO DE LIÇÃO 6 -->
+        <article class="licao" id="licao-6">
+            <h2>Lição 6: Funções</h2>
+            <p>As funções são blocos de código reutilizáveis. Definem-se com <span class="negrito">def</span>.</p>
+            <pre><code><span class="py-keyword">def</span> saudar(nome):
+    <span class="py-builtin">print</span>(<span class="py-string">"Olá, "</span> <span class="py-operator">+</span> nome <span class="py-operator">+</span> <span class="py-string">"!"</span>)
+
+<span class="py-comment"># Chamar a função</span>
+saudar(<span class="py-string">"Maria"</span>)
+
+<span class="py-comment"># Função com retorno</span>
+<span class="py-keyword">def</span> somar(a, b):
+    <span class="py-keyword">return</span> a <span class="py-operator">+</span> b
+
+resultado <span class="py-operator">=</span> somar(<span class="py-number">5</span>, <span class="py-number">3</span>)
+<span class="py-builtin">print</span>(resultado)
+            </code></pre>
+        </article>
+
+
+
+        <!-- COMO ADICIONAR NOVA LIÇÃO:
+             1. Copia tudo entre <article class="licao"> e </article>
+             2. Cola abaixo da última lição
+             3. Altera o id, título e conteúdo
+        -->
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Curso de Python Estático</p>
+        <a href="https://www.python.org/" target="_blank">Visitar python.org (Ligação Externa)</a>
+    </footer>
+
+
+</body>
+
+</html>
