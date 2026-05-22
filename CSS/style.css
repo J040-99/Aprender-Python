@@ -179,3 +179,20 @@ footer {
 .code1 {
   color: #000000;
 }
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #306998;
+  margin: 15px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
